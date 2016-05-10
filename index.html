@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+	<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="images/manifest.json">
+<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+
+	<section class="main">
+		<h1 id="Slist">
+			Shopping List
+		</h1>
+
+		<form id="textBox">
+		<p><input id="addItems" type="text" name="addItems" placeholder="Enter your shopping list items here" autocomplete="off"></p>
+		</form>
+
+		<div class="list">
+			<ul class="shoppingList">
+			</ul>
+		</div>
+
+		<div class="instructions">
+			<p><span><img id="check" src="images/check.svg"></span> Mark items as bought</p>
+			<p><span><img id="remove" src="images/remove.svg"></span> Remove items from shopping list</p>
+			<p><span><img id='check' src="images/pan.svg"></span> Drag items to reorder the list</p>
+			<p><span><img id='check' src="images/list.svg"></span> Scroll the list to view all items</p>
+
+		</div>
+	</section>
+
+
+	<section class="bottom">
+		<ul class="bottomImages">
+			<li class="leaf"><img src="images/pineapple.jpg" alt="pineapple" style="max-width: 250px; max-height: 250px;"></li
+			><li class='banana'><img src="images/burger.jpg" alt="burger" style="max-width: 250px; max-height: 250px;"></li
+			><li class='orange'><img src="images/orange.jpg" alt="orange" style="max-width: 250px; max-height: 250px;"></li
+			><li class='bottle'><img src="images/cola.jpg" alt="cola" style="max-width: 250px; max-height: 250px;"></li
+			><li class='cookies'><img src="images/berry.jpg" alt="berries" style="max-width: 250px; max-height: 250px;"></li> 
+		</ul>
+	</section>
+
+	<footer><p class='va'><span><img id='check' src="images/va.svg"></span> Victor Ahluwalia</p></footer>
+
+	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="js/script3.js"></script>	
+
+</body>
+</html>

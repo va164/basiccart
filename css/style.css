@@ -1,0 +1,212 @@
+
+*{
+	box-sizing: border-box;
+} 
+
+
+.main {
+	box-sizing: border-box;
+	/*display: inline-block;*/
+	position: absolute;
+	left: 10%;
+	top: 20%;
+}
+
+#Slist {
+	font-family: "Fjalla One", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color:  #ff8d60;
+	letter-spacing: .75px;
+	padding: 0;
+	margin: 10px 0;
+	box-sizing: border-box;
+}
+
+#addItems {	
+	font-family: "Fjalla One", sans-serif;
+	color:  #b5b3b3;
+	width: 300px;
+	border-style: solid;
+	border-radius: 10px;
+	background-color: #fff;
+	padding-left: 5px;
+	margin-left: -5px;
+	margin-bottom: 5px;
+}
+
+::-webkit-input-placeholder {
+	color: #d6d6d6;
+} 
+
+.list {
+	position: fixed;
+	left: 45%;
+	top: 8%;
+	width: 500px;
+	height: 330px;
+	overflow-y: auto;
+	box-sizing: border-box;
+}
+
+.shoppingList {
+	padding: 0;
+	margin: 0 auto;
+}
+
+.shoppingList li {
+	display: block;
+	font-family: "Fjalla One", sans-serif;
+	color:  #ff8d60;
+	letter-spacing: .25px;
+	text-align: center;
+	border: 1px solid #aaaaaa;
+	border-radius: 10px;
+	margin-top: 5px;
+	padding: 3px 5px 5px 3px;
+	cursor: pointer;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.shoppingList #check,
+.shoppingList #unCheck {
+	float: left;
+}
+
+.shoppingList #remove {
+	float: right;
+}
+
+.shoppingList > .bought {
+	color: #d6d6d6;
+	text-decoration: line-through;
+}
+
+
+#check,
+#unCheck,
+#remove {
+	opacity: .6;
+}
+
+
+
+.bought > #remove {
+	opacity: .1;
+}
+
+.bought > #unCheck {
+	opacity: .2;
+}
+
+.instructions > p {
+	font-family: "Fjalla One", sans-serif;
+	font-size: 14px;
+	margin-bottom: -15px;
+	color: #d6d6d6;
+}
+
+
+.bottom {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 61%;
+	box-sizing: border-box;
+	overflow: contain;
+	
+}
+
+.bottomImages > li {
+	display: inline-block;
+	margin: 15px;
+	padding: 0px;
+}
+
+.check{
+	height: 24px;
+	width: 24px;
+	background-image: url(../images/check.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+	opacity: .6;
+
+}
+
+.unCheck {
+	height: 24px;
+	width: 24px;
+	background-image: url(../images/uncheck.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+	opacity: .6;
+}
+
+.remove {
+	height: 24px;
+	width: 24px;
+	background-image: url(../images/remove.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: right;
+	opacity: .6;
+}
+
+p > input[type='text']:focus {
+  	outline: 0;
+}
+
+.bought > .check,
+.toBuy > .unCheck {
+	display: none;
+}
+
+.bought > .unCheck,
+.toBuy > .check {
+	display: block;
+}
+
+footer {
+	position: fixed;
+	bottom: 0%;
+	right: 1%
+}
+
+footer > .va {
+	opacity: .25;
+	font-size: 12px;
+}
+
+
+@media screen and (max-width:1000px) {
+	body, 
+	.instructions > p {
+		font-size: 75%;
+	}
+
+	
+	.instructions {
+		width: 100%;
+	}
+
+	#addItems {
+		width: 130%;
+	}
+
+	.list {
+		width: 50%;
+		height: auto;
+	}
+
+	.check,
+	.unCheck,
+	.remove,
+	#check,
+	#remove {
+		height: 18px;
+		width: 18px;
+	}
+
+}
